@@ -1,0 +1,36 @@
+# Not code: client documents, photos, the built APK, reference files
+/docs/
+/*.jpg
+/*.jpeg
+/*.png
+!/Baseera logo.jpeg
+/*.apk
+/make_wiring.py
+/hardware/Baseera_BOM.xlsx
+
+# Local tools and Python environments
+.tools/
+**/.venv/
+**/.venv-*/
+**/__pycache__/
+ml/.coco_export/
+ml/.pip-cache/
+ml/.tmp/
+
+# Build output (hardware/cad/out is made by baseera_glasses.py)
+firmware/build/
+firmware/build_full/
+firmware/.build_*/
+firmware/tools/tmp/
+hardware/cad/out/
+app/tool/screenshots/failures/
+
+# Gradle and Android home folders kept inside the app (C: is full)
+app/android/caches/
+app/android/daemon/
+app/android/native/
+app/android/kotlin-profile/
+app/android/android/
+app/android/.kotlin/
+app/android/.tmp/
+app/android/*.log

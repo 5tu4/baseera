@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 690" width="1100" height="690"><style>
+@page { size: A4 landscape; margin: 9mm; }
+* { box-sizing: border-box; }
+body { font-family: "Segoe UI", Arial, sans-serif; color:#1f2328; margin:0; font-size:10.5pt; background:#fff; }
+h1 { font-size:17pt; margin:0 0 1mm; }
+h2 { font-size:13pt; margin:4mm 0 2mm; color:#0f4c81; }
+.sub { color:#5b6470; margin:0 0 2mm; font-size:9.5pt; }
+.page { break-after: page; }
+.page:last-child { break-after: auto; }
+svg.diagram { display:block; width:100%; height:150mm; }
+.case { fill:none; stroke:#fff; stroke-width:7; stroke-linecap:round; stroke-linejoin:round; }
+.wire { fill:none; stroke-width:3.2; stroke-linecap:round; stroke-linejoin:round; }
+.tag rect { fill:#fff; stroke-width:1.6; }
+.tag text { font-size:10px; font-weight:700; text-anchor:middle; fill:#1f2328; }
+.optbox { fill:#f6f8fa; stroke:#9aa7b4; stroke-dasharray:5 4; }
+.zone { fill:none; stroke:#c5ced8; stroke-width:1.2; }
+.zonename { font-size:10px; font-weight:700; fill:#7a8794; letter-spacing:1px; }
+.pad { fill:#d9a441; stroke:#8a6417; stroke-width:1; }
+.pad.unused { fill:#5a5a5a; stroke:#444; }
+.hole { fill:#2a2a2a; } .edgehole { fill:#fff; }
+.pin { stroke:#d9a441; stroke-width:3; }
+.pcb-black { fill:#22252a; } .pcb-blue { fill:#1e5aa8; } .pcb-navy { fill:#1c2a4a; }
+.usb { fill:#c9ccd1; stroke:#8b9097; } .chip { fill:#111; }
+.mhole { fill:#fff; stroke:#d9a441; stroke-width:2; }
+.motor { fill:#3b3b3b; stroke:#888; } .battery { fill:#d8dde4; stroke:#8b9097; }
+.switch { fill:#b9bec6; stroke:#7d838b; } .knob { fill:#222; }
+.res { fill:#111; stroke:#ffcc33; stroke-width:1.5; }
+.r3 { font-size:10px; font-weight:700; fill:#ffd54f; }
+.resistor { fill:none; stroke:#1f2328; stroke-width:2; stroke-linejoin:round; }
+.node { fill:#1f2328; }
+.pinlab { font-size:11px; font-weight:700; fill:#1f2328; } .light { fill:#fff; } .dim { fill:#8c8c8c; font-weight:400; }
+.boardname { font-size:13px; font-weight:700; fill:#fff; }
+.small { font-size:10px; fill:#3d4650; } .small.light { fill:#e8eef7; } .title { font-size:11.5px; font-weight:700; fill:#0f4c81; }
+.legend { display:flex; flex-wrap:wrap; gap:2mm 6mm; margin:1mm 0 2mm; font-size:9.5pt; }
+.legend span { display:inline-flex; align-items:center; gap:2mm; }
+.legend i { display:inline-block; width:10mm; height:3.2mm; border-radius:2mm; }
+.legend i.dash { background:none; height:0; border-top:3px dashed #d32f2f; border-radius:0; }
+.alert { border:1.5px solid #d32f2f; background:#fff4f4; border-radius:2mm; padding:2mm 3mm; margin:2mm 0; }
+.cols { display:flex; gap:6mm; } .cols > div { flex:1; }
+table { width:100%; border-collapse:collapse; font-size:8.8pt; }
+.p2 .cols { font-size:9pt; line-height:1.4; } .p2 h1 { margin-bottom:0; } .p2 h2 { margin:2.5mm 0 1mm; font-size:12pt; } .p2 li { margin-bottom:0.6mm; }
+th, td { border:1px solid #cfd6dd; padding:0.7mm 2mm; text-align:left; vertical-align:top; }
+th { background:#eaf1f7; }
+tr.opt td { color:#5b6470; background:#fafbfc; }
+td.sw { width:8mm; } td.sw i { display:inline-block; width:7mm; height:3mm; border-radius:1.5mm; }
+ol { margin:1mm 0; padding-left:6mm; } li { margin-bottom:1.2mm; }
+.note { color:#5b6470; font-size:9pt; }
+</style><rect width="1100" height="690" fill="#fff"/><rect x="14" y="96" width="600" height="512" rx="10" class="zone"/>
+<text x="28" y="116" class="zonename">RIGHT TEMPLE</text>
+<rect x="632" y="250" width="454" height="330" rx="10" class="zone"/>
+<text x="1072" y="572" class="zonename" text-anchor="end">LEFT TEMPLE</text>
+<text x="470" y="660" class="small">W5, W6 cross the frame in the groove behind its top rim</text>
+<text x="360" y="150" class="title">XIAO ESP32S3 Sense · back of the main board</text>
+<text x="360" y="165" class="small">the side you solder on; camera board on the other side</text>
+<rect x="360" y="210" width="214" height="252" rx="10" class="pcb-black"/>
+<rect x="413" y="190" width="108" height="34" rx="8" class="usb"/>
+<text x="467" y="211" class="small" text-anchor="middle">USB-C (programming)</text>
+<rect x="353" y="237" width="14" height="16" rx="3" class="pad unused"/><circle cx="360" cy="245" r="3.2" class="edgehole"/>
+<text x="372" y="249" text-anchor="start" class="pinlab dim">5V</text>
+<rect x="353" y="267" width="14" height="16" rx="3" class="pad"/><circle cx="360" cy="275" r="3.2" class="edgehole"/>
+<text x="372" y="279" text-anchor="start" class="pinlab light">GND</text>
+<rect x="353" y="298" width="14" height="16" rx="3" class="pad"/><circle cx="360" cy="306" r="3.2" class="edgehole"/>
+<text x="372" y="310" text-anchor="start" class="pinlab light">3V3</text>
+<rect x="353" y="328" width="14" height="16" rx="3" class="pad unused"/><circle cx="360" cy="336" r="3.2" class="edgehole"/>
+<text x="372" y="340" text-anchor="start" class="pinlab dim">D10</text>
+<rect x="353" y="359" width="14" height="16" rx="3" class="pad unused"/><circle cx="360" cy="367" r="3.2" class="edgehole"/>
+<text x="372" y="371" text-anchor="start" class="pinlab dim">D9</text>
+<rect x="353" y="389" width="14" height="16" rx="3" class="pad"/><circle cx="360" cy="397" r="3.2" class="edgehole"/>
+<text x="372" y="401" text-anchor="start" class="pinlab light">D8</text>
+<rect x="353" y="420" width="14" height="16" rx="3" class="pad unused"/><circle cx="360" cy="428" r="3.2" class="edgehole"/>
+<text x="372" y="432" text-anchor="start" class="pinlab dim">D7</text>
+<rect x="567" y="237" width="14" height="16" rx="3" class="pad unused"/><circle cx="574" cy="245" r="3.2" class="edgehole"/>
+<text x="562" y="249" text-anchor="end" class="pinlab dim">D0 / A0</text>
+<rect x="567" y="267" width="14" height="16" rx="3" class="pad unused"/><circle cx="574" cy="275" r="3.2" class="edgehole"/>
+<text x="562" y="279" text-anchor="end" class="pinlab dim">D1</text>
+<rect x="567" y="298" width="14" height="16" rx="3" class="pad unused"/><circle cx="574" cy="306" r="3.2" class="edgehole"/>
+<text x="562" y="310" text-anchor="end" class="pinlab dim">D2</text>
+<rect x="567" y="328" width="14" height="16" rx="3" class="pad unused"/><circle cx="574" cy="336" r="3.2" class="edgehole"/>
+<text x="562" y="340" text-anchor="end" class="pinlab dim">D3</text>
+<rect x="567" y="359" width="14" height="16" rx="3" class="pad unused"/><circle cx="574" cy="367" r="3.2" class="edgehole"/>
+<text x="562" y="371" text-anchor="end" class="pinlab dim">D4</text>
+<rect x="567" y="389" width="14" height="16" rx="3" class="pad unused"/><circle cx="574" cy="397" r="3.2" class="edgehole"/>
+<text x="562" y="401" text-anchor="end" class="pinlab dim">D5</text>
+<rect x="567" y="420" width="14" height="16" rx="3" class="pad unused"/><circle cx="574" cy="428" r="3.2" class="edgehole"/>
+<text x="562" y="432" text-anchor="end" class="pinlab dim">D6</text>
+<rect x="450" y="290" width="34" height="20" rx="3" class="pad"/>
+<text x="442" y="304" text-anchor="end" class="pinlab light">BAT−</text>
+<rect x="450" y="340" width="34" height="20" rx="3" class="pad"/>
+<text x="442" y="354" text-anchor="end" class="pinlab light">BAT+</text>
+<text x="440" y="452" class="boardname" text-anchor="middle">XIAO ESP32S3</text>
+<text x="360" y="486" class="small">5V pin: leave empty</text>
+<text x="360" y="500" class="small">(it is the USB-C line)</text>
+<text x="30" y="214" class="title">Vibration motor module · as printed</text>
+<text x="30" y="229" class="small">header pins IN · VCC · GND, top to bottom</text>
+<rect x="30" y="245" width="220" height="220" rx="12" class="pcb-navy"/>
+<circle cx="104" cy="350" r="46" class="motor"/>
+<text x="104" y="354" class="small light" text-anchor="middle">motor</text>
+<circle cx="226" cy="268" r="10" class="mhole"/>
+<circle cx="226" cy="442" r="10" class="mhole"/>
+<rect x="166" y="282" width="18" height="10" rx="1" class="res"/>
+<rect x="170" y="402" width="14" height="10" rx="1" class="chip"/>
+<rect x="228" y="310" width="22" height="80" rx="2" class="chip"/>
+<line x1="250" y1="325" x2="272" y2="325" class="pin"/>
+<circle cx="272" cy="325" r="5.5" class="pad"/>
+<text x="220" y="329" text-anchor="end" class="pinlab light">IN</text>
+<line x1="250" y1="350" x2="272" y2="350" class="pin"/>
+<circle cx="272" cy="350" r="5.5" class="pad"/>
+<text x="220" y="354" text-anchor="end" class="pinlab light">VCC</text>
+<line x1="250" y1="375" x2="272" y2="375" class="pin"/>
+<circle cx="272" cy="375" r="5.5" class="pad"/>
+<text x="220" y="379" text-anchor="end" class="pinlab light">GND</text>
+<text x="30" y="484" class="small">its own transistor drives the motor: IN high = vibrate</text>
+<text x="30" y="498" class="small">solder the wires onto the 3 header pins (or cut them short first)</text>
+<text x="30" y="530" class="title">On the XIAO</text>
+<text x="30" y="546" class="small">Pads are counted from the USB-C end. Seen from the back, the left</text>
+<text x="30" y="560" class="small">edge is 5V, GND, 3V3, D10, D9, D8, D7 and the right edge D0 to D6.</text>
+<text x="30" y="574" class="small">BAT− is the battery pad nearer the USB-C: confirm it with the</text>
+<text x="30" y="588" class="small">beep test on page 2 before the battery goes on.</text>
+<text x="870" y="292" class="title">TP4056 USB-C charger, 6 pads</text>
+<rect x="870" y="300" width="190" height="140" rx="6" class="pcb-blue"/>
+<rect x="1046" y="345" width="40" height="50" rx="7" class="usb"/>
+<text x="1030" y="338" class="small light" text-anchor="end">USB-C (charging)</text>
+<rect x="960" y="352" width="40" height="34" rx="3" class="chip"/>
+<rect x="972" y="396" width="16" height="9" rx="1" class="res"/>
+<text x="980" y="420" class="r3" text-anchor="middle">R3 → 4.7 kΩ</text>
+<circle cx="880" cy="315" r="5.5" class="pad"/><circle cx="880" cy="315" r="2" class="hole"/>
+<text x="892" y="319" text-anchor="start" class="pinlab light">OUT−</text>
+<circle cx="880" cy="342" r="5.5" class="pad"/><circle cx="880" cy="342" r="2" class="hole"/>
+<text x="892" y="346" text-anchor="start" class="pinlab light">B−</text>
+<circle cx="880" cy="398" r="5.5" class="pad"/><circle cx="880" cy="398" r="2" class="hole"/>
+<text x="892" y="402" text-anchor="start" class="pinlab light">B+</text>
+<circle cx="880" cy="425" r="5.5" class="pad"/><circle cx="880" cy="425" r="2" class="hole"/>
+<text x="892" y="429" text-anchor="start" class="pinlab light">OUT+</text>
+<circle cx="1036" cy="312" r="5.5" class="pad unused"/><circle cx="1036" cy="312" r="2" class="hole"/>
+<text x="1026" y="316" text-anchor="end" class="pinlab dim">+</text>
+<circle cx="1036" cy="428" r="5.5" class="pad unused"/><circle cx="1036" cy="428" r="2" class="hole"/>
+<text x="1026" y="432" text-anchor="end" class="pinlab dim">−</text>
+<text x="870" y="456" class="small">drawn turned round: pads face the battery</text>
+<text x="870" y="470" class="small">+ − at the USB-C end (USB input): not used</text>
+<rect x="700" y="300" width="90" height="140" rx="8" class="battery"/>
+<rect x="778" y="330" width="12" height="80" rx="3" class="pcb-blue"/>
+<text x="738" y="344" class="small" text-anchor="middle">LiPo</text>
+<text x="738" y="360" class="small" text-anchor="middle">3.7 V</text>
+<text x="738" y="376" class="small" text-anchor="middle">300 mAh</text>
+<text x="738" y="392" class="small" text-anchor="middle">5×26×37</text>
+<text x="738" y="424" class="small" text-anchor="middle">red +, black −</text>
+<rect x="758" y="518" width="78" height="22" rx="3" class="switch"/>
+<rect x="764" y="540" width="18" height="10" rx="2" class="knob"/>
+<circle cx="772" cy="508" r="5.5" class="pad"/>
+<text x="772" y="534" class="small" text-anchor="middle">A</text>
+<circle cx="797" cy="508" r="5.5" class="pad"/>
+<text x="797" y="534" class="small" text-anchor="middle">mid</text>
+<circle cx="822" cy="508" r="5.5" class="pad unused"/>
+<text x="822" y="534" class="small" text-anchor="middle">B</text>
+<text x="758" y="566" class="title">Slide switch SS12D00</text>
+<text x="900" y="526" class="small">ON = slider toward A</text>
+<text x="900" y="540" class="small">leg B unused</text>
+<rect x="632" y="40" width="454" height="196" rx="8" class="optbox"/>
+<text x="646" y="60" class="title">Optional · battery level (2 × 100 kΩ), on the XIAO</text>
+<text x="646" y="75" class="small">lets the app read the battery %</text>
+<text x="700" y="100" class="pinlab" text-anchor="middle">XIAO BAT+</text>
+<path d="M700,106 L700,114" class="case"/><path d="M700,106 L700,114" class="wire" stroke="#d32f2f" stroke-dasharray="7 5"/>
+<path d="M700.0,114.0 L693.0,116.1 L707.0,120.4 L693.0,124.6 L707.0,128.9 L693.0,133.1 L707.0,137.4 L693.0,141.6 L707.0,145.9 L700.0,148.0" class="resistor"/>
+<path d="M700,148 L700,162" class="case"/><path d="M700,148 L700,162" class="wire" stroke="#7b1fa2" stroke-dasharray="7 5"/>
+<circle cx="700" cy="162" r="4" class="node"/>
+<path d="M700,162 L746,162" class="case"/><path d="M700,162 L746,162" class="wire" stroke="#7b1fa2" stroke-dasharray="7 5"/>
+<text x="754" y="166" class="pinlab">XIAO D0 / A0</text>
+<path d="M700.0,170.0 L693.0,172.1 L707.0,176.4 L693.0,180.6 L707.0,184.9 L693.0,189.1 L707.0,193.4 L693.0,197.6 L707.0,201.9 L700.0,204.0" class="resistor"/>
+<text x="700" y="222" class="pinlab" text-anchor="middle">XIAO BAT−</text>
+<g class="tag"><rect x="725" y="123" width="30" height="16" rx="8" stroke="#d32f2f" stroke-dasharray="3 2"/><text x="740" y="135">R1</text></g>
+<g class="tag"><rect x="725" y="179" width="30" height="16" rx="8" stroke="#1b1b1b" stroke-dasharray="3 2"/><text x="740" y="191">R2</text></g>
+<text x="862" y="112" class="small">R1: BAT+ to D0 (1st pad, right edge)</text>
+<text x="862" y="127" class="small">R2: D0 to BAT−</text>
+<text x="862" y="142" class="small">Sleeve the resistor legs.</text>
+<text x="862" y="157" class="small">Not fitted: set HAS_BATTERY_SENSE 0</text>
+<text x="862" y="172" class="small">in firmware config.h.</text><path d="M272,375 L293.0,375.0 Q300,375 300.0,368.0 L300.0,282.0 Q300,275 307.0,275.0 L360,275" class="case"/><path d="M272,375 L293.0,375.0 Q300,375 300.0,368.0 L300.0,282.0 Q300,275 307.0,275.0 L360,275" class="wire" stroke="#1b1b1b"/>
+<path d="M272,350 L315.0,350.0 Q322,350 322.0,343.0 L322.0,313.0 Q322,306 329.0,306.0 L360,306" class="case"/><path d="M272,350 L315.0,350.0 Q322,350 322.0,343.0 L322.0,313.0 Q322,306 329.0,306.0 L360,306" class="wire" stroke="#ef6c00"/>
+<path d="M272,325 L337.0,325.0 Q344,325 344.0,332.0 L344.0,390.0 Q344,397 351.0,397.0 L360,397" class="case"/><path d="M272,325 L337.0,325.0 Q344,325 344.0,332.0 L344.0,390.0 Q344,397 351.0,397.0 L360,397" class="wire" stroke="#7b1fa2"/>
+<path d="M790,398 L880,398" class="case"/><path d="M790,398 L880,398" class="wire" stroke="#d32f2f"/>
+<path d="M790,342 L880,342" class="case"/><path d="M790,342 L880,342" class="wire" stroke="#1b1b1b"/>
+<path d="M880,425 L855.0,425.0 Q848,425 848.0,432.0 L848.0,471.0 Q848,478 841.0,478.0 L804.0,478.0 Q797,478 797.0,485.0 L797,508" class="case"/><path d="M880,425 L855.0,425.0 Q848,425 848.0,432.0 L848.0,471.0 Q848,478 841.0,478.0 L804.0,478.0 Q797,478 797.0,485.0 L797,508" class="wire" stroke="#d32f2f"/>
+<path d="M772,508 L772.0,497.0 Q772,490 765.0,490.0 L687.0,490.0 Q680,490 680.0,497.0 L680.0,623.0 Q680,630 673.0,630.0 L502.0,630.0 Q495,630 495.0,623.0 L495.0,357.0 Q495,350 488.0,350.0 L472,350" class="case"/><path d="M772,508 L772.0,497.0 Q772,490 765.0,490.0 L687.0,490.0 Q680,490 680.0,497.0 L680.0,623.0 Q680,630 673.0,630.0 L502.0,630.0 Q495,630 495.0,623.0 L495.0,357.0 Q495,350 488.0,350.0 L472,350" class="wire" stroke="#d32f2f"/>
+<path d="M880,315 L855.0,315.0 Q848,315 848.0,308.0 L848.0,277.0 Q848,270 841.0,270.0 L667.0,270.0 Q660,270 660.0,277.0 L660.0,607.0 Q660,614 653.0,614.0 L517.0,614.0 Q510,614 510.0,607.0 L510.0,307.0 Q510,300 503.0,300.0 L472,300" class="case"/><path d="M880,315 L855.0,315.0 Q848,315 848.0,308.0 L848.0,277.0 Q848,270 841.0,270.0 L667.0,270.0 Q660,270 660.0,277.0 L660.0,607.0 Q660,614 653.0,614.0 L517.0,614.0 Q510,614 510.0,607.0 L510.0,307.0 Q510,300 503.0,300.0 L472,300" class="wire" stroke="#1b1b1b"/>
+<g class="tag"><rect x="315.0" y="267.0" width="30" height="16" rx="8" stroke="#1b1b1b"/><text x="330.0" y="279.0">W1</text></g>
+<g class="tag"><rect x="326.0" y="298.0" width="30" height="16" rx="8" stroke="#ef6c00"/><text x="341.0" y="310.0">W2</text></g>
+<g class="tag"><rect x="329.0" y="353.0" width="30" height="16" rx="8" stroke="#7b1fa2"/><text x="344.0" y="365.0">W3</text></g>
+<g class="tag"><rect x="820.0" y="390.0" width="30" height="16" rx="8" stroke="#d32f2f"/><text x="835.0" y="402.0">B1</text></g>
+<g class="tag"><rect x="820.0" y="334.0" width="30" height="16" rx="8" stroke="#1b1b1b"/><text x="835.0" y="346.0">B2</text></g>
+<g class="tag"><rect x="807.5" y="470.0" width="30" height="16" rx="8" stroke="#d32f2f"/><text x="822.5" y="482.0">W4</text></g>
+<g class="tag"><rect x="585" y="622" width="30" height="16" rx="8" stroke="#d32f2f"/><text x="600" y="634">W5</text></g>
+<g class="tag"><rect x="585" y="606" width="30" height="16" rx="8" stroke="#1b1b1b"/><text x="600" y="618">W6</text></g></svg>

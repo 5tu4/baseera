@@ -1,0 +1,206 @@
+{
+  "@@locale": "ar",
+  "appName": "بصيرة",
+  "tagline": "تواصل أسهل، وخطوة أكثر أماناً",
+  "back": "رجوع",
+  "start": "ابدأ",
+  "tryAgain": "حاول مرة أخرى",
+  "close": "إغلاق",
+  "cancel": "إلغاء",
+  "all": "الكل",
+  "yes": "نعم",
+  "no": "لا",
+  "undo": "تراجع",
+  "edit": "تعديل",
+  "delete": "حذف",
+  "hide": "إخفاء",
+  "save": "حفظ",
+  "demo": "تجربة",
+  "connected": "متصلة",
+  "notConnected": "غير متصلة",
+  "batteryShort": "{percent}%",
+  "@batteryShort": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "batteryPercent": "البطارية {percent}%",
+  "@batteryPercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "meters": "{value} م",
+  "@meters": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "whoUsesApp": "من سيستخدم التطبيق؟",
+  "modeDeafTitle": "أصم أو ضعيف سمع",
+  "modeDeafSubtitle": "ترجمة الإشارة، وقراءة الكلام، وعبارات جاهزة",
+  "modeBlindTitle": "كفيف أو ضعيف بصر",
+  "modeBlindSubtitle": "النظارة الذكية بواجهة صوتية بسيطة",
+  "modeCompanionTitle": "مرافق أو تجربة كل الأقسام",
+  "modeCompanionSubtitle": "كل الأقسام في مكان واحد، ومنها إعدادات النظارة",
+  "changeLaterHint": "يمكنك تغيير ذلك لاحقاً من الإعدادات",
+  "howToAddressYou": "كيف نخاطبك؟",
+  "howToAddressYouHint": "نصوغ العبارات بحسب اختيارك، مثل: «أنا متعب» أو «أنا متعبة».",
+  "male": "ذكر",
+  "female": "أنثى",
+  "yourNameOptional": "اسمك (اختياري)",
+  "yourNameHint": "مثال: عبدالله",
+  "yourNameWhy": "نضيف عبارة «اسمي ...» إلى صوتي.",
+  "signTitle": "افهمني",
+  "listenTitle": "أقرأ كلامك",
+  "voiceTitle": "صوتي",
+  "glassesTitle": "نظارتي",
+  "settingsTitle": "الإعدادات",
+  "signsIKnow": "الإشارات التي أفهمها",
+  "signsIKnowHint": "أفهم {count} إشارة حالياً. اضغط على أي إشارة لترى طريقة أدائها.",
+  "@signsIKnowHint": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "signsSource": "المقاطع من قاعدة بيانات KArSL للغة الإشارة العربية (جامعة الملك فهد للبترول والمعادن).",
+  "howToSign": "طريقة أداء إشارة «{word}»",
+  "@howToSign": {
+    "placeholders": {
+      "word": {
+        "type": "String"
+      }
+    }
+  },
+  "switchCamera": "بدّل الكاميرا",
+  "diagnosticsTitle": "معلومات تقنية",
+  "diagnosticsHint": "أرسل هذه المعلومات إلى فريق التطوير لمعرفة سبب المشكلة.",
+  "copyDetails": "نسخ",
+  "copiedDetails": "تم نسخ المعلومات",
+  "cameraPermissionTitle": "نحتاج إذنك لاستخدام الكاميرا",
+  "cameraPermissionBody": "اسمح للتطبيق باستخدام الكاميرا من إعدادات الجهاز.",
+  "cameraUnavailableTitle": "تعذّر تشغيل الكاميرا",
+  "cameraUnavailableBody": "تأكد أن الكاميرا تعمل، ثم حاول مرة أخرى.",
+  "cameraStarting": "نجهّز الكاميرا...",
+  "modelLoading": "نجهّز قراءة الإشارات...",
+  "modelUnavailable": "قراءة الإشارات غير متاحة على هذا الجهاز",
+  "tapForDetails": "اضغط للتفاصيل",
+  "hintSignInFrame": "أشِر داخل الإطار",
+  "hintSignThenLower": "أشِر، ثم أنزل يديك",
+  "hintWatching": "أراك... أنزل يديك عند الانتهاء",
+  "hintUnsure": "لم أفهم، أعد الإشارة",
+  "noSignYet": "لم تظهر إشارة بعد",
+  "wordsAppearHere": "الكلمات التي أفهمها تظهر هنا",
+  "speakWord": "انطق الكلمة",
+  "sentenceHint": "كل إشارة تُضاف هنا لتكوين جملة",
+  "speakSentence": "انطق الجملة",
+  "deleteLastWord": "احذف آخر كلمة",
+  "clearSentence": "امسح الجملة",
+  "whatPeopleSay": "ما يقوله من حولك",
+  "smallerText": "تصغير النص",
+  "biggerText": "تكبير النص",
+  "clearSpeech": "امسح النص",
+  "tapToListen": "اضغط لبدء الاستماع",
+  "listeningTapToStop": "أستمع الآن، اضغط للإيقاف",
+  "listenProblem": "توقف الاستماع بسبب مشكلة، حاول مرة أخرى",
+  "micPermissionTitle": "نحتاج إذنك لاستخدام الميكروفون",
+  "micPermissionBody": "اسمح للتطبيق باستخدام الميكروفون من إعدادات الجهاز.",
+  "listenUnavailableTitle": "تحويل الكلام إلى نص غير متاح",
+  "listenUnavailableBody": "تأكد من اتصالك بالإنترنت ومن تثبيت تطبيق Google، ثم حاول مرة أخرى.",
+  "listeningNow": "أستمع الآن...",
+  "readyToListen": "جاهز للاستماع",
+  "listenHint": "اطلب من الشخص الذي أمامك أن يتكلم، وستظهر كلماته هنا بخط كبير.",
+  "startListening": "ابدأ الاستماع",
+  "stopListening": "أوقف الاستماع",
+  "typeToSpeakHint": "اكتب ما تريد قوله...",
+  "speakIt": "انطقها",
+  "saveToMyWords": "احفظ في كلماتي",
+  "myWords": "كلماتي",
+  "addPhrase": "أضف كلمة",
+  "newPhrase": "كلمة جديدة",
+  "editPhrase": "تعديل الكلمة",
+  "phraseHint": "اكتب الكلمة أو العبارة",
+  "category": "القسم",
+  "tryVoice": "جرّب النطق",
+  "phraseSaved": "حُفظت في كلماتي",
+  "phraseDeleted": "حُذفت العبارة",
+  "phraseHidden": "أُخفيت العبارة",
+  "phraseTileHint": "اضغط للنطق، واضغط مطولاً للخيارات",
+  "noWordsYet": "لم تُضف كلمات بعد",
+  "noWordsYetHint": "أضف الكلمات والعبارات التي تحتاجها كثيراً، لتنطقها بضغطة واحدة.",
+  "glassesConnected": "النظارة متصلة",
+  "glassesConnecting": "جارٍ الاتصال بالنظارة",
+  "glassesDisconnected": "النظارة غير متصلة",
+  "glassesHint": "شغّل النظارة، ثم اضغط «اتصال»",
+  "connect": "اتصال",
+  "disconnect": "قطع الاتصال",
+  "demoExplain": "وضع التجربة يحاكي النظارة حتى تجهز القطعة الفعلية، ويمكنك إيقافه من الإعدادات.",
+  "sensorAhead": "أمامك",
+  "sensorFloor": "الأرض",
+  "cameraPreview": "كاميرا النظارة",
+  "cameraPreviewDemo": "لا توجد كاميرا في وضع التجربة",
+  "cameraPreviewWaiting": "ستظهر الصورة هنا عند وصولها من النظارة",
+  "warnings": "التنبيهات",
+  "obstacleWarnings": "تنبيهات العوائق",
+  "warningsOnHint": "تعمل الآن",
+  "warningsOffHint": "متوقفة، ولن يصل أي تنبيه",
+  "warnFrom": "نبّهني من مسافة",
+  "glassesVoice": "صوت النظارة",
+  "glassesVibration": "اهتزاز النظارة",
+  "phoneSpeaksWarnings": "نطق التنبيهات من الجوال",
+  "phoneSpeaksWarningsHint": "مفيد مع سماعة بلوتوث",
+  "testSound": "اختبر الصوت",
+  "rotatePicture": "تدوير الصورة",
+  "testVibration": "اختبر الاهتزاز",
+  "latestWarnings": "آخر التنبيهات",
+  "noWarningsYet": "لا توجد تنبيهات بعد",
+  "tapToHearStatus": "اضغط لسماع الحالة",
+  "warningsAreOn": "التنبيهات تعمل",
+  "warningsAreOff": "التنبيهات متوقفة",
+  "turnWarningsOn": "تشغيل التنبيهات",
+  "turnWarningsOff": "إيقاف التنبيهات",
+  "connectGlasses": "الاتصال بالنظارة",
+  "disconnectGlasses": "قطع اتصال النظارة",
+  "settingsForHelper": "الإعدادات، للمرافق",
+  "aboutYou": "عنك",
+  "languageAndLook": "اللغة والمظهر",
+  "themeAuto": "تلقائي",
+  "themeLight": "فاتح",
+  "themeDark": "داكن",
+  "voice": "الصوت",
+  "speedSlow": "بطيء",
+  "speedNormal": "عادي",
+  "speedFast": "سريع",
+  "voiceSample": "هكذا سيكون صوت النطق",
+  "autoSpeakSigns": "انطق الإشارة فور قراءتها",
+  "demoMode": "وضع التجربة",
+  "demoModeHint": "نظارة افتراضية لعرض القسم قبل تجهيز القطعة الفعلية",
+  "glassesWifi": "نظارة بالواي فاي",
+  "glassesWifiHint": "للنظارة التي تتصل عبر شبكتها الخاصة بدل البلوتوث",
+  "showHiddenPhrases": "إظهار العبارات المخفية ({count})",
+  "@showHiddenPhrases": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "aboutApp": "حول التطبيق",
+  "version": "الإصدار {version}",
+  "@version": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "credits": "نموذج قراءة الإشارات مدرَّب على قاعدة بيانات KArSL للغة الإشارة العربية، ويستخدم MediaPipe من Google. الخط: IBM Plex Sans Arabic."
+}

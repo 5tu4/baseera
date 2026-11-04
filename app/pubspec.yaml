@@ -1,0 +1,56 @@
+name: baseera
+description: "بصيرة - تطبيق تواصل للصم والبكم ونظارة ذكية للمكفوفين"
+publish_to: 'none'
+
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+
+  camera: ^0.11.2+1
+  flutter_tts: ^4.2.5
+  speech_to_text: ^7.4.0
+  shared_preferences: ^2.5.3
+  tflite_flutter: ^0.12.1
+  package_info_plus: ^9.0.1
+  flutter_blue_plus: ">=1.35.0 <1.36.0"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    # The logo, made from "Baseera logo.jpeg" by tool/make_icons.py.
+    - assets/brand/
+    # Sign classifier from Ishara (ml/train.py, trained on KArSL) + labels,
+    # and the glasses' obstacle model (ml/obstacle/install_model.py).
+    - assets/model/
+    # MediaPipe hand + pose landmark models, loaded by LandmarkChannel.kt.
+    - assets/mediapipe/
+    # How-to clips for the "signs I understand" sheet (KArSL signer).
+    - assets/signs/
+
+  # IBM Plex Sans Arabic (SIL Open Font License, see assets/fonts/OFL.txt).
+  fonts:
+    - family: Plex
+      fonts:
+        - asset: assets/fonts/IBMPlexSansArabic-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/IBMPlexSansArabic-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/IBMPlexSansArabic-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/IBMPlexSansArabic-Bold.ttf
+          weight: 700
